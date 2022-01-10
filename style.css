@@ -1,0 +1,35 @@
+@import url(globals.css);
+
+html {
+    background-color: var(--bg1);
+    color: var(--txt1);
+}
+
+header {
+    color: var(--txt1)
+}
+
+#logo {
+    fill: green;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--txt1);
+    fill: none;
+    width: 20%;
+}
+@media (orientation: portrait) {
+    #logo {
+        width: 42%;
+    }
+  }
+#CenterHeader {
+    text-align: center;
+}
+
+hr {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px;
+    width: 75%;
+}
