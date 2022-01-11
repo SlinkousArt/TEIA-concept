@@ -1,16 +1,22 @@
 @import url(globals.css);
 
-html {
+html, body {
     background-color: var(--bg1);
     color: var(--txt1);
+    scrollbar-color: red;
+    margin: 0;
 }
 
 header {
-    color: var(--txt1)
+    background-color: var(--bg1);
+    color: var(--txt1);
+    position: sticky;
+    top: 0;
 }
 
+
+
 #logo {
-    fill: green;
     stroke-width: 6;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -18,12 +24,15 @@ header {
     fill: none;
     width: 20%;
 }
+#logo:hover {
+    stroke: var(--txt2);
+}
 @media (orientation: portrait) {
     #logo {
         width: 42%;
     }
   }
-#CenterHeader {
+#centerHeader {
     text-align: center;
 }
 
@@ -32,4 +41,37 @@ hr {
     border-style: solid;
     border-radius: 2px;
     width: 75%;
+}
+
+
+#scrollArea {
+    text-align: center;
+}
+
+.single-image {
+    width: 50%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media (orientation: portrait) {
+    .single-image {
+        width: 70%;
+    }
+  }
+
+::-webkit-scrollbar {
+    width: 10px;
+    padding: 2px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg2);
+    border: 2px solid var(--bg1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--txt2);
 }
